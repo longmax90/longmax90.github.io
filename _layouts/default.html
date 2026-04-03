@@ -13,9 +13,15 @@
 
   <header class="site-header">
     <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-    {% unless page.url == "/" %}
-    <p class="home-link"><a href="/">Back to homepage</a></p>
-    {% endunless %}
+    <nav class="site-nav" aria-label="Site navigation">
+      {% unless page.url == "/" %}
+      <a href="/">Back to homepage</a>
+      <span class="nav-sep">|</span>
+      {% endunless %}
+      <a href="/categories/">Categories</a>
+      <span class="nav-sep">|</span>
+      <a href="/tags/">Tags</a>
+    </nav>
   </header>
 
   <main class="content" role="main">
