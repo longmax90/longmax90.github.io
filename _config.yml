@@ -1,0 +1,8 @@
+title: longmax90.github.io
+description: Security research notes on C, C++, and Rust
+url: "https://longmax90.github.io"
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:categories/:year/:month/:day/:title/

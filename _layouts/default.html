@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 }}">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+    {% unless page.url == "/" %}
+    <p class="home-link"><a href="/">Back to homepage</a></p>
+    {% endunless %}
+  </header>
+
+  <main class="content" role="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Author:</strong> Long NGUYEN (Software Security Engineer, Paris, France)</p>
+    <p><strong>Contact:</strong> <a href="https://www.linkedin.com/in/vuthanhlongnguyen/">https://www.linkedin.com/in/vuthanhlongnguyen/</a></p>
+  </footer>
+</body>
+</html>
