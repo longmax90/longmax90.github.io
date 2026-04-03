@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Long NGUYEN's Software Security Blog"
+title: "Long Max's Software Security Blog"
 ---
 
 ## Latest Posts

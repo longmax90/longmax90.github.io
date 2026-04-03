@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "Undefined Behavior: The Silent Killer in Critical Software"
-date: 2026-04-03 00:00:00 +0000
-categories: [introduction, security-research]
-tags: [c, cpp, undefined-behavior, formal-verification, safety-critical]
+date: 2026-04-05 00:00:00 +0000
+categories: [software-security, undefined-behavior]
+tags: [software-security, undefined-behavior, c, cpp, formal-verification]
 ---
 
 You have probably heard the phrase "undefined behavior" thrown around in C and C++ circles. Most developers treat it as a theoretical concern, something that only matters in edge cases, something that "works fine in practice."
