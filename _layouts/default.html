@@ -16,12 +16,23 @@
     <nav class="site-nav" aria-label="Site navigation">
       {% unless page.url == "/" %}
       <a href="/">Back to homepage</a>
+      {% endunless %}
+      {% unless page.collection == "posts" %}
+      {% unless page.url == "/" %}
       <span class="nav-sep">|</span>
       {% endunless %}
       <a href="/categories/">Categories</a>
       <span class="nav-sep">|</span>
       <a href="/tags/">Tags</a>
+      {% endunless %}
     </nav>
+    {% if page.tags and page.tags.size > 0 %}
+    <ul class="post-tags" aria-label="Post tags">
+      {% for tag in page.tags %}
+      <li><a href="/tags/#{{ tag | slugify }}">#{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </header>
 
   <main class="content" role="main">

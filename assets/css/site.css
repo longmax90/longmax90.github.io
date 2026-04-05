@@ -103,6 +103,36 @@ body {
   color: var(--line);
 }
 
+.post-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  padding: 0;
+  margin: 0.8rem 0 0;
+}
+
+.post-tags li {
+  margin: 0;
+}
+
+.post-tags a {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.86rem;
+}
+
+.post-tags a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
 .home-link a {
   color: var(--ink-soft);
   text-decoration: underline;
