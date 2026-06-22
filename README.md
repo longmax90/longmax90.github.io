@@ -12,6 +12,8 @@ GitHub Pages blog for publishing software security articles on C, C++, and Rust.
 cd /home/longmax/blogs
 bundle install --local
 bundle exec jekyll serve --livereload
+# include future-dated posts
+bundle exec jekyll serve --livereload --future
 ```
 
 Visit **http://127.0.0.1:4000** in your browser.
@@ -43,6 +45,8 @@ bundle install
 
 ```bash
 bundle exec jekyll serve --livereload
+# include future-dated posts
+bundle exec jekyll serve --livereload --future
 ```
 
 Access at **http://127.0.0.1:4000**. Changes auto-reload; press **Ctrl+C** to stop.
