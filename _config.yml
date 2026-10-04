@@ -6,3 +6,4 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:categories/:year/:month/:day/:title/
+
